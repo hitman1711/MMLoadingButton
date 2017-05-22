@@ -29,12 +29,12 @@ open class MMLoadingButton: UIButton {
             }
         }
     }
+    open var originalRadius:CGFloat = 0.0
     fileprivate var errTopConstraint:NSLayoutConstraint!
     fileprivate var originBottomConstant:CGFloat = 0.0
     fileprivate var bottomConstraint:NSLayoutConstraint?
     fileprivate var completed:(()->Void)?
     fileprivate var originalColor:UIColor!
-    fileprivate var originalRadius:CGFloat = 0.0
     fileprivate var stateLayer:MMStateLayer!
     fileprivate var toVC:UIViewController!
     fileprivate var scuessTransition:MMTransition?
